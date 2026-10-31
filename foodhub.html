@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SharePlate | Food Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">🌿 SharePlate</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="foodhub.html">Food Hub</a>
+  </div>
+</nav>
+
+<section class="section">
+  <span class="tag">COMMUNITY FOOD NETWORK</span>
+  <h1>Welcome to Food Hub 🍱</h1>
+  <p>Discover food. Share kindness. Reduce waste.</p>
+</section>
+
+<section class="section">
+  <h2>Share Your Extra Food 💚</h2>
+
+  <form id="donationForm" class="feature-card">
+    <input id="foodName" placeholder="Food name" required>
+    <input id="quantity" placeholder="Quantity" required>
+
+    <select id="category" required>
+      <option value="">Select category</option>
+      <option>Meals</option>
+      <option>Fruits</option>
+      <option>Vegetables</option>
+      <option>Bakery</option>
+      <option>Other</option>
+    </select>
+
+    <input id="location" placeholder="Pickup location" required>
+    <input id="expiry" type="date" required>
+
+    <button class="primary-btn" type="submit">
+      Donate Food +
+    </button>
+  </form>
+</section>
+
+<section class="section">
+  <h2>Explore Available Food 🔎</h2>
+
+  <input id="search" placeholder="Search food...">
+
+  <select id="filter">
+    <option value="All">All Categories</option>
+    <option>Meals</option>
+    <option>Fruits</option>
+    <option>Vegetables</option>
+    <option>Bakery</option>
+    <option>Other</option>
+  </select>
+
+  <div id="foodList" class="feature-grid"></div>
+</section>
+
+<section class="section">
+  <h2>📦 My Donation History</h2>
+  <div id="history"></div>
+</section>
+
+<section class="section">
+  <h2>📊 Admin Dashboard</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3 id="totalDonations">0</h3>
+      <p>Total Donations</p>
+    </div>
+
+    <div class="feature-card">
+      <h3 id="totalRequests">0</h3>
+      <p>Food Requests</p>
+    </div>
+
+    <div class="feature-card">
+      <h3 id="totalAvailable">0</h3>
+      <p>Available Food</p>
+    </div>
+  </div>
+
+  <h3>Manage Requests</h3>
+  <div id="adminRequests"></div>
+</section>
+
+<footer>
+  <h3>🌿 SharePlate</h3>
+  <p>Share Food. Share Hope. © 2026</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
